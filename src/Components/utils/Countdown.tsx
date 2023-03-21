@@ -34,7 +34,7 @@ const Countdown = () => {
 
 
     return (
-        <Typography variant={isSmall ? 'subtitle1' : 'h6'}>Starts in: {days} days, {hours} hours, {minutes} minutes</Typography>
+        <Typography variant={isSmall ? 'subtitle1' : 'h6'}><b> Starts in: {days} days, {hours} hours, {minutes} minutes</b></Typography>
     );
 };
 
