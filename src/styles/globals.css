@@ -139,6 +139,11 @@ body {
 .accept:hover .span {
   transform: scale(1.1);
 }
+@media screen and (max-width: 415px){
+  .accept{
+    width: auto;
+  }
+}
 /* button style ends here */
 
 /* add to wishlist button style starts here */
