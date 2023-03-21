@@ -123,6 +123,19 @@ body {
   width: 163px ;
   color: #344054 !important;
   height: 46px;
+  text-transform: none !important;
+  transition: background-color 0.2s ease-in-out;
+}
+.accept:hover{
+  background-color: #344054 !important;
+  color: #FFFFFF !important;
+}
+.accept  .span {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+.accept:hover .span {
+  transform: scale(1.1);
 }
 .wishlist{
   background: #004CCC !important;

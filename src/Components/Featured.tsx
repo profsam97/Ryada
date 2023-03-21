@@ -22,7 +22,7 @@ const Featured : React.FC = () => {
                     </Typography>
 
                     <Button size={'small'}   className={'accept'} >
-                        View Auction
+                       <Typography variant={'body2'} component={'span'} className={'span'}>  View Auction</Typography>
                     </Button>
                 </Stack>
                 <Divider/>
