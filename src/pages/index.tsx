@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from "@/Components/Header";
 import {Container} from "@mui/system";
+import Hero from "@/Components/Hero";
+import Featured from "@/Components/Featured";
 
 
 export default function Home() {
@@ -17,6 +19,9 @@ export default function Home() {
       </Head>
         <Container maxWidth={'xl'} >
             <Header/>
+
+            <Hero/>
+            <Featured/>
         </Container>
     </>
   )
