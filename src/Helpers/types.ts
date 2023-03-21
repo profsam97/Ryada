@@ -1,3 +1,4 @@
+//interface for the product
 export interface IProduct {
     name : string,
     title: string,

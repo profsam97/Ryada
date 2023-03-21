@@ -17,7 +17,7 @@ const Hero : React.FC = () => {
                     />
                 </Box>
                 <Box sx={{p:2, display: 'flex', flexDirection: isTab ? 'column' : 'row', alignItems: 'flex-start', height: isTab ? '100%' : '100px'}}>
-                    <img className={'imageSub'} style={{marginTop: '-70px', alignSelf: isTab ?  'center' : ''}} src={'/assets/img/heroSub.png'}/>
+                    <img className={'imageSub'} src={'/assets/img/heroSub.png'}/>
                     <Box sx={{display: 'flex', gap: isMobile ? 2 : 0, flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between' , width: '100%' }}>
                         <Stack spacing={1}  sx={{mx: isMobile ? 'auto' : 'none'}} >
                             <Countdown/>

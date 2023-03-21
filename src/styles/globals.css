@@ -166,6 +166,15 @@ body {
 .imageSub:hover{
   cursor: pointer;
 }
+.imageSub{
+  margin-top: -70px;
+
+}
+@media screen and (max-width: 860px) {
+  .imageSub{
+    align-self: center;
+  }
+}
 /* hero img secondary style ends here */
 .overflow{
   white-space: nowrap;
