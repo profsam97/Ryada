@@ -167,3 +167,8 @@ body {
   cursor: pointer;
 }
 /* hero img secondary style ends here */
+.overflow{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

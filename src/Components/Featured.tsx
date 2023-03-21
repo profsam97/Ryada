@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Box, Stack} from "@mui/system";
-import {Button, Divider, Grid, Paper, Typography} from "@mui/material";
+import {Button, Divider, Grid, Paper, Typography, useMediaQuery} from "@mui/material";
 import Cards from "@/Components/utils/Cards";
 import {IProduct, TData} from "@/Helpers/types";
 import {useDataFetch} from "@/Hooks/UsedataFetch";
@@ -8,7 +8,8 @@ import SkeletonUtil from "@/Components/utils/Skeleton";
 
 const Featured : React.FC = () => {
     const [products, setProducts] = useState<IProduct[]>([]);
-
+    const isReduce : boolean = useMediaQuery('(max-width: 950px)');
+    const isMobile : boolean = useMediaQuery('(max-width: 680px)')
     const onSuccess  = (fetchedData : TData) => {
         const {data} = fetchedData
         setProducts(data)
@@ -36,7 +37,7 @@ const Featured : React.FC = () => {
                 {products.length > 0 &&
                 <Grid container spacing={2}>
                     {products.map((product, index) => (
-                        <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
+                        <Grid key={index} item xs={12} sm={isMobile ? 12 : 6} md={isReduce ? 6 : 4} lg={3}>
                         <Cards product={product} />
                         </Grid>
                         ))}

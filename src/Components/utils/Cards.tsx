@@ -17,7 +17,7 @@ const Cards : React.FC<TProducts> = ({product}) => {
                         </img>
                         <Stack className={'cardOverlay'} spacing={1} sx={{display: 'flex', flexDirection: 'row'}}>
                             <Avatar sx={{background: '#F2F4F7', color: '#475467', mr:1}} variant={'circular'}> {reduceName(name)} </Avatar>
-                            <Stack direction={'row'} sx={{my:2, width: '100%'}}>
+                            <Stack direction={'row'} className={'overflow'} sx={{my:2, width: '100%'}}>
                                 <Typography variant={'body1'}><b> {name} </b></Typography>
                                 <Typography sx={{fontWeight: '400'}} variant={'body1'}>(Highest Bidder)</Typography>
                             </Stack>
