@@ -15,6 +15,9 @@ const customTheme = createTheme({
 });
 export default function App({ Component, pageProps }: AppProps) {
     const client = new QueryClient();
+    const newAppRequest = {
+      "name" : "jackison"
+    }
   return (
       <QueryClientProvider client={client}>
       <ThemeProvider theme={customTheme}>
